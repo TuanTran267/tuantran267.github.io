@@ -1,0 +1,58 @@
+//SAVING
+.saving {
+  h4 {
+    font-size: 1.18rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  hr {
+    border-top: 1px solid #acacac;
+    margin-top: 0px;
+  }
+  &-percent {
+    @include flex;
+    align-items: center;
+    margin-bottom: 19px;
+    h1 {
+      font-size: 3.25rem;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+    p {
+      padding-left: 28px;
+      margin: 0px!important;
+    }
+  }
+  p {
+    font-size: 1rem;
+    color: #3d3d3d;
+    margin-bottom: 16px;
+  }
+  b {
+    display: block;
+    font-size: 1rem;
+    color: #3d3d3d;
+    margin-bottom: 16px;
+    span {
+      color: #ff0000;
+    }
+  }
+  a {
+    display: inline-block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #343434;
+    border: 1px solid;
+    padding: 10px 52px;
+    margin-bottom: 22px;
+    margin-right: 20px;
+    @include transition(0.2s);
+    &:hover {
+      color: #8a7864;
+      border:1px solid #8a7864;
+    }
+  }
+  .note {
+    margin-bottom: 25px;
+  }
+}

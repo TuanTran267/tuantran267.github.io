@@ -1,0 +1,28 @@
+//Breadcrumb
+.breadcrumb {
+  background: transparent;
+  padding: 15px 0;
+  margin: 0px;
+  font-size: 0.8rem;
+  @media #{$info-phone} {
+    padding: 12px 0;
+  }
+  &-other {
+    padding: 10px 0 15px;
+  }
+  &-item {
+    &+.breadcrumb-item {
+      padding-left: .3rem;
+    }
+    &+.breadcrumb-item {
+      &:before {
+        padding-right: .3rem;
+      }
+    }
+    a {
+      color: #3e3e3e;
+      font-weight: 600;
+    }
+  }
+
+}

@@ -1,0 +1,114 @@
+#footer {
+  background: #f7f6f6;
+  padding-top: 38px;
+  @media #{$info-phone} {
+    padding-top: 23px;
+  }
+  .logo-footer {
+    @media #{$info-phone} {
+      text-align: center;
+    }
+    img {
+      @media #{$info-phone} {
+        width: 135px;
+      }
+    }
+  }
+  .footer-column {
+    @include flex;
+    justify-content: space-between;
+    padding: 24px 0px;
+    @media #{$info-phone} {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .title-bold {
+      font-size: 14px;
+      font-weight: bold;
+      color: #505050;
+    }
+    ul {
+      @media #{$info-phone} {
+        width: 50%;
+      }
+      li {
+        list-style: none;
+        margin-bottom: 4px;
+        a {
+          font-size: 14px;
+          color: #505050;
+        }
+      }
+      @media #{$info-phone} {
+        margin-bottom: 20px;
+      }
+    }
+    .social {
+      .social-icon {
+        padding-top: 20px;
+        a {
+          display: inline-block;
+          padding-right: 5px;
+        }
+        img {
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+  }
+  .footer-end {
+    text-align: center;
+    padding-top: 22px;
+    ul {
+      li {
+        display: inline-block;
+        list-style: none;
+        line-height: 1;
+        border-right: 1px solid;
+        padding: 0px 10px;
+        &:last-child {
+          border: none;
+        }
+        a {
+          font-size: 14px;
+          color: #505050;
+        }
+      }
+    }
+    p {
+      font-size: 14px;
+      color: #505050;
+      padding: 6px 0px 20px;
+      span {
+        @media #{$info-phone} {
+          display: block;
+        }
+      }
+    }
+  }
+  .scroll-to-top {
+    position: fixed;
+    z-index: 100;
+    bottom: 60px;
+    left: 0px;
+    padding: 8px 18px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    background: -webkit-gradient(90deg, #8e7d6a 10%, transparent 90%);
+    background: -webkit-linear-gradient(90deg, #8e7d6a 10%, transparent 90%);
+    background: -o-linear-gradient(90deg, #8e7d6a 10%, transparent 90%);
+    background: linear-gradient(90deg, #8e7d6a 10%, transparent 90%);
+    cursor: pointer;
+    @include transform(rotate(-90deg));
+    img {
+      @include transform(rotate(90deg));
+      margin: 0px 10px;
+      width: 20px;
+    }
+    @media #{$info-phone} {
+      display: none;
+    }
+  }
+}

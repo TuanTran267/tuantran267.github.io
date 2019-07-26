@@ -1,0 +1,75 @@
+html {
+  @media #{$info-phone} {
+    padding-top: 50px;
+  }
+}
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul, ol, p {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  text-align: justify;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+* {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.mobile {
+  display: none ;
+  @media #{$info-tablet-horizontal} {
+    //width: auto;
+    display: none;
+  }
+  @media #{$info-tablet-vertical} {
+    //width: auto;
+    display: none;
+  }
+  @media #{$info-phone} {
+    display: block;
+  }
+}
+
+.pc {
+  display: block;
+
+  @media #{$info-tablet-horizontal} {
+    //width: auto;
+    display: block;
+  }
+  @media #{$info-tablet-vertical} {
+    //width: auto;
+    display: block;
+  }
+  @media #{$info-phone} {
+    display: none ;
+  }
+}
+
+.form-control:focus {
+  border: 0;
+  box-shadow: none;
+}
+
+input {
+  outline:none;
+}
+
+html, body {
+  height: 100%;
+}

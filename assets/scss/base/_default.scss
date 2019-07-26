@@ -1,0 +1,17 @@
+.container-custom {
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media #{$info-tablet-horizontal} {
+    max-width: 720px;
+  }
+  @media #{$info-tablet-vertical} {
+    width: 100%;
+  }
+  @media #{$info-phone} {
+    width: 100%;
+  }
+}
